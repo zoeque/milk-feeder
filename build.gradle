@@ -25,10 +25,16 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework.boot:spring-boot-starter-data-rest'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-mail'
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+
+	runtimeOnly 'com.h2database:h2:2.2.220'
+
+	implementation 'io.vavr:vavr:0.10.3'
+	implementation 'com.google.apis:google-api-services-gmail:v1-rev110-1.25.0'
 }
 
 tasks.named('test') {
