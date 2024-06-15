@@ -35,3 +35,12 @@ out/
 
 ### VS Code ###
 .vscode/
+
+### For development ###
+application-dev.properties
+
+### H2 Database ###
+/h2db
+
+## Project settings
+!**/*-dev.properties
